@@ -4,7 +4,7 @@ fAKE mUSEUM is a project related to virtual exhibition spaces and images surroun
 
 In order to explore the identity and significance of exhibition images that are no longer confined to artworks and exhibitions, as well as their relationship with "exhibitions," fAKE mUSEUM constructs and unveils a virtual exhibition space called 'fAKE mUSEUM,' where visitors can create or delete internal and external elements.
 
-[fAKE mUSEUM(Kang Jiyun, Lim Nare)](http://www.fakemuseum.kr/)
+[fAKE mUSEUM(Kang Jiyun, Lim Nare)](http://www.fakemuseum.kr/) </ br>
 Graphic Degign by [PAPER COMPANY](www.behance.net/papercompany)
 
 
@@ -34,19 +34,29 @@ All development work is done with Vanilla JavaScript.
 When clicking on each floor, the pop-up works as follows:
 
 - Hide navigation
-`navList.classList.remove('block')` 
+```
+navList.classList.remove('block')
+``` 
 
 - Clear interval to prevent overlapping of slide images
-`clearInterval(interval)`
+```
+clearInterval(interval)
+```
 
 - Show the pop-up
-`popupFirst.classList.replace('none', 'block')`
+```
+popupFirst.classList.replace('none', 'block')
+```
 
 - Bring this pop-up to the front
-`popupFirst.style.zIndex = 1000`
+```
+popupFirst.style.zIndex = 1000
+```
 
 - Move other pop-ups backward
-`Array.from(popup).forEach((value) => {value.style.zIndex -= 1;})`
+```
+Array.from(popup).forEach((value) => {value.style.zIndex -= 1;})
+```
 
 - Create a random array of images for the pop-up
 ```
@@ -68,7 +78,9 @@ function firstRandom() {
 ```
 
 - Set an inteval to switch images in the pop-up every 3 seconds
-`interval = setInterval(firstRandom, 3000);`
+```
+interval = setInterval(firstRandom, 3000);
+```
 
 - Add blur effect to the main background image
 ```
@@ -110,4 +122,4 @@ I couldn't find any solution to fix the landscape orientation in web environment
 ## Timelines
 
 - Oct 28 - Nov 6, 2022 : Development
-- Jul 24, 2023 : Added README and created repository
+- Jul 30, 2023 : Added README and created repository
