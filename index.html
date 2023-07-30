@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>fake museum</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="poster" id="poster">
+            <!-- <div class="poster2"><img src="images/poster2.png" alt=""></div> -->
+
+        </div>
+        <div class="nav">
+            <div class="btnNav hide" id="btnNav">menu</div>
+            <nav>
+                <ul class="navList none" id="navList">
+                    <li id="about">About</li>
+                    <li id="second">2층</li>
+                    <li id="first">1층</li>
+                    <li id="basement">지하 1층</li>
+                    <li id="storage">자료실</li>
+                </ul>
+            </nav>
+        </div>
+        <!-- popup -->
+        <div class="popup none" id="popupSecond">
+            <div class="popupIn">
+                <div class="blank"></div>
+                <div class="popupHead">
+                    <div class="title">2층</div>
+                    <div class="close hide" id="closeSecond">close</div>
+                </div>
+                <div class="btnMap" id="btnMapSecond">floor info</div>
+            </div>
+        </div>
+        <div class="popup none" id="popupFirst">
+            <div class="popupIn">
+                <div class="popupHead">
+                    <div class="title">1층</div>
+                    <div class="close hide" id="closeFirst">close</div>
+                </div>
+                <div class="btnMap" id="btnMapFirst">floor info</div>
+            </div>
+        </div>
+        <div class="popup none" id="popupBasement">
+            <div class="popupIn">
+                <div class="popupHead">
+                    <div class="title">지하 1층</div>
+                    <div class="close hide" id="closeBasement">close</div>
+                </div>
+                <div class="btnMap" id="btnMapBasement">floor info</div>
+            </div>
+        </div>
+        <div class="popup none" id="popupStorage">
+            <div class="popupIn">
+                <div class="folder">
+                    <ul>
+                        <a href="https://drive.google.com/drive/folders/1TLPviE32ksBFfPN45QWpEA496NtBBOrO?usp=share_link"
+                            target="_blank">
+                            <li>도록</li>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1TADdQ0Va8ZIUtdxHweF6s6IupuwVuocj?usp=share_link"
+                            target="_blank">
+                            <li>전시 정보</li>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1eiH2VFzn9r_61sQSOBWkTQxbVxnO6xO4?usp=share_link"
+                            target="_blank">
+                            <li>전시장</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="popupHead">
+                    <div class="title">자료실</div>
+                    <div class="close hide" id="closeStorage">close</div>
+                </div>
+            </div>
+        </div>
+        <div class="popup none" id="popupAbout">
+            <div class="popupIn">
+                <div class="about">
+                    <div class="text">
+                        <p><span>fAKE mUSEUM</span>은 가상의 전시장과 전시를 둘러싼 이미지에 관한 프로젝트다. 온라인 미디어를 통해 유통되는, 때로는 작품이나 전시의 실물보다 거대한 전시-이미지를 다룬다. 전시를 여닫으며 생성되고 전시-이미지, 그리고 SNS 등 온라인 미디어를 통해 소비·유통되는 이미지들을 간접 전달되는 부차적인 것으로만 인식할 것인가. 작품과 전시에 더 이상 복속되지 않는 전시-이미지의 정체성과 의미, 그리고 ‘전시’와의 관계를 묻기 위해 <span>fAKE mUSEUM</span>은 이용객이 내&#183;외부를 새롭게 생성하거나 삭제할 수 있는 가상의 전시장 ‘fAKE mUSEUM’을 신축하고 공개한다.</p>
+                        <p><span>fAKE mUSEUM</span>is a project about images surrounding a virtual exhibition and its space. It deals with exhibition images that are circulated through online media and are sometimes even larger in scale than actual works or exhibitions. Should we perceive the exhibition images created with the opening and closing of exhibitions, and those consumed and circulated through online media such as SNS, merely as indirectly communicated, secondary information? In order to question the identity and significance of exhibition images, which are no longer dependent on works and exhibitions, and their relationship with the “exhibition,” <span>fAKE mUSEUM</span>will establish a virtual exhibition space called “fAKE mUSEUM,” which can be newly created, modified or deleted by users. The project will be opened to the public in November 2022.</p>
+                        <p>Contact: maybefakemuseum@gmail.com</p>
+                    </div>
+                </div>
+                <div class="popupHead">
+                    <div class="title">About</div>
+                    <div class="close hide" id="closeAbout">close</div>
+                </div>
+            </div>
+        </div>
+        <!-- handout -->
+        <div class="popupMap" id="popupMap">
+            <!-- <div class="dim none"></div> -->
+            <div class="map" id="map"></div>
+        </div>
+
+        <!-- sound -->
+        <div class="player">
+            <div class="btnPlay hide" id="btnPlay">play sound</div>
+            <div class="btnMute hide none" id="btnMute">mute sound</div>
+            <audio id="sound" src="sound.mp4"></audio>
+        </div>
+    </div>
+</body>
+
+</html>
