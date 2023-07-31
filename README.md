@@ -4,7 +4,7 @@ fAKE mUSEUM is a project related to virtual exhibition spaces and images surroun
 
 In order to explore the identity and significance of exhibition images that are no longer confined to artworks and exhibitions, as well as their relationship with "exhibitions," fAKE mUSEUM constructs and unveils a virtual exhibition space called 'fAKE mUSEUM,' where visitors can create or delete internal and external elements.
 
-[fAKE mUSEUM(Kang Jiyun, Lim Nare)](http://www.fakemuseum.kr/) </ br>
+[fAKE mUSEUM(Kang Jiyun, Lim Nare)](http://www.fakemuseum.kr/) <br />
 Graphic Degign by [PAPER COMPANY](www.behance.net/papercompany)
 
 
